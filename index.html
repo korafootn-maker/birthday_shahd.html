@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#d6336c">
+  <meta name="description" content="تهنئة متأخرة بعيد ميلاد شهد عبدالحليم من أسرة الدفعة 27 طب">
+  <title>إلى شهد عبدالحليم | الدفعة 27 طب 🎂</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --pink: #ff6f91;
+      --dark-pink: #c9184a;
+      --light: #fff0f4;
+      --gold: #ffd166;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Tahoma, Arial, sans-serif;
+      color: #67243b;
+      background:
+        radial-gradient(circle at top left, #ffe0e9, transparent 45%),
+        linear-gradient(135deg, #fff0f5, #ffe4ec, #fff8f0);
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .top {
+      padding: 24px 15px 10px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: white;
+      color: var(--dark-pink);
+      border: 1px solid #ffd0dc;
+      padding: 10px 17px;
+      border-radius: 30px;
+      font-size: 14px;
+      box-shadow: 0 5px 18px #c9184a12;
+    }
+
+    .container {
+      width: min(92%, 680px);
+      margin: 18px auto 35px;
+      padding: 30px 22px;
+      background: rgba(255,255,255,.88);
+      border: 1px solid #ffffff;
+      border-radius: 28px;
+      box-shadow: 0 18px 55px #9d174d18;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cake {
+      font-size: 66px;
+      animation: float 2.5s ease-in-out infinite;
+      display: inline-block;
+    }
+
+    h1 {
+      color: var(--dark-pink);
+      font-size: clamp(27px, 6vw, 43px);
+      line-height: 1.6;
+      margin: 12px 0;
+    }
+
+    .subtitle {
+      color: #a14a69;
+      font-size: 16px;
+      line-height: 2;
+    }
+
+    .divider {
+      width: 85px;
+      height: 4px;
+      border-radius: 5px;
+      background: linear-gradient(to left, #ff8fab, #ffd166);
+      margin: 22px auto;
+    }
+
+    .late {
+      background: #fff0f4;
+      border: 1px dashed #ff9bb6;
+      border-radius: 16px;
+      padding: 14px;
+      line-height: 2;
+      font-size: 15px;
+      margin: 22px 0;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 16px;
+      border-radius: 30px;
+      padding: 14px 23px;
+      margin: 7px;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    button:active {
+      transform: scale(.96);
+    }
+
+    .main-btn {
+      color: white;
+      background: linear-gradient(135deg, #ff6f91, #c9184a);
+      box-shadow: 0 8px 20px #c9184a35;
+    }
+
+    .secondary-btn {
+      color: #b5174c;
+      background: #fff0f4;
+      border: 1px solid #ffc5d4;
+    }
+
+    .letter {
+      display: none;
+      text-align: right;
+      line-height: 2.2;
+      font-size: 16px;
+      margin-top: 24px;
+      padding: 22px 18px;
+      border-radius: 20px;
+      background: linear-gradient(145deg, #fff6f8, #fff0f4);
+      border: 1px solid #ffd2df;
+      animation: appear .7s ease;
+    }
+
+    .letter.show {
+      display: block;
+    }
+
+    .letter p {
+      margin: 0 0 15px;
+    }
+
+    .signature {
+      text-align: center;
+      color: var(--dark-pink);
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .quote {
+      color: #a83c60;
+      font-style: italic;
+      line-height: 2;
+      padding: 15px;
+    }
+
+    footer {
+      padding: 0 15px 28px;
+      font-size: 13px;
+      line-height: 2;
+      color: #a45a73;
+    }
+
+    .heart {
+      position: fixed;
+      bottom: -35px;
+      z-index: 0;
+      pointer-events: none;
+      animation: rise linear forwards;
+    }
+
+    .confetti {
+      position: fixed;
+      top: -15px;
+      z-index: 5;
+      pointer-events: none;
+      animation: fall linear forwards;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(-3deg); }
+      50% { transform: translateY(-10px) rotate(3deg); }
+    }
+
+    @keyframes rise {
+      to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: .2;
+      }
+    }
+
+    @keyframes appear {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 420px) {
+      .container {
+        padding: 25px 16px;
+      }
+
+      .letter {
+        font-size: 15px;
+        padding: 17px 13px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="top">
+    <div class="badge">💗 من أسرة الدفعة 27 طب بكل المحبة 💗</div>
+  </header>
+
+  <main class="container">
+    <div class="cake">🎂</div>
+
+    <h1>كل عام وأنتِ بخير يا شهد</h1>
+
+    <p class="subtitle">
+      إلى شهد عبدالحليم، زميلتنا الغالية<br>
+      لكِ من أسرتكِ في الدفعة 27 طب أجمل الأمنيات 🌷
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="late">
+      قد تتأخر التهنئة يومًا عن موعدها،<br>
+      لكن المحبة الصادقة لا تتأخر أبدًا. ❤️
+    </div>
+
+    <p>هناك رسالة صغيرة أعددناها لكِ من القلب...</p>
+
+    <button class="main-btn" id="openBtn" onclick="openLetter()">
+      💌 افتحي رسالتكِ يا شهد
+    </button>
+
+    <section class="letter" id="letter">
+      <p><strong>إلى زميلتنا الغالية شهد عبدالحليم،</strong></p>
+
+      <p>
+        باسم أسرة الدفعة 27 طب، نرسل إليكِ أصدق التهاني
+        وأطيب الأمنيات بمناسبة عيد ميلادكِ الذي كان بالأمس.
+        وإن تأخرنا يومًا في التهنئة، فمكانتكِ في القلوب
+        لا ترتبط بتاريخ ولا يغيّرها تأخير.
+      </p>
+
+      <p>
+        شهد العزيزة، كل عام وأنتِ بخير، وكل عام وأنتِ أقرب
+        إلى أحلامكِ، وأكثر طمأنينة وسعادة. نسأل الله أن يجعل
+        عامكِ الجديد عامًا لجبر الخاطر، وتحقيق الأمنيات،
+        والنجاح الذي يليق بتعبكِ وطموحكِ.
+      </p>
+
+      <p>
+        وفي رحلتنا الطويلة في درب الطب، نتمنى لكِ قلبًا
+        لا تفقده الأيام رحمته، وعلمًا ينفعكِ وينفع الناس،
+        وخطواتٍ يرافقها التوفيق، وأيامًا تعوّضكِ عن كل تعب،
+        وفرحًا يأتيكِ من حيث لا تحتسبين.
+      </p>
+
+      <p>
+        نتمنى أن تبقى ابتسامتكِ حاضرة، وأن تجدي في كل
+        مرحلة من حياتكِ ما يمنحكِ الأمل والقوة.
+        أنتِ فرد عزيز من أسرتنا، ولكِ منا كل التقدير والمحبة.
+      </p>
+
+      <p>
+        قد تكون كلماتنا بسيطة، لكنها تحمل دعوات صادقة
+        بأن يكتب الله لكِ مستقبلًا جميلًا، وأن يحقق لكِ
+        ما تتمنين، وأن يجعل القادم من أيامكِ أجمل مما مضى.
+      </p>
+
+      <p class="signature">
+        كل عام وأنتِ بخير يا شهد 🌸<br>
+        بكل المحبة والتقدير،<br>
+        أسرة الدفعة 27 طب 💗
+      </p>
+    </section>
+
+    <div class="divider"></div>
+
+    <p class="quote">
+      "بعض الأشخاص يجعلون الطريق أجمل بمجرد وجودهم،
+      ونتمنى أن تكون أيامكِ القادمة مليئة بما يشبه قلبكِ من جمال." 
+    </p>
+
+    <button class="secondary-btn" onclick="celebrate()">
+      🎉 أطلقي الاحتفال
+    </button>
+
+    <button class="secondary-btn" onclick="copyGreeting()">
+      📋 نسخ التهنئة
+    </button>
+
+    <p id="feedback" aria-live="polite"></p>
+  </main>
+
+  <footer>
+    صُنعت هذه التهنئة بمحبة واعتزاز<br>
+    💗 إهداء من أسرة الدفعة 27 طب إلى شهد عبدالحليم 💗
+  </footer>
+
+  <script>
+    let opened = false;
+
+    function openLetter() {
+      const letter = document.getElementById("letter");
+      const button = document.getElementById("openBtn");
+
+      letter.classList.add("show");
+      button.textContent = "💖 رسالتنا لكِ من القلب";
+
+      if (!opened) {
+        opened = true;
+        celebrate();
+        setTimeout(() => {
+          letter.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }, 150);
+      }
+    }
+
+    function celebrate() {
+      const colors = ["#ff6f91", "#c9184a", "#ffd166",
+                      "#ffafcc", "#ffffff", "#f72585"];
+      const shapes = ["💗", "💖", "💕", "✨", "🌸", "🎉"];
+
+      for (let i = 0; i < 65; i++) {
+        const item = document.createElement("span");
+        item.className = "confetti";
+        item.textContent = shapes[Math.floor(Math.random() * shapes.length)];
+        item.style.left = Math.random() * 100 + "vw";
+        item.style.fontSize = (12 + Math.random() * 18) + "px";
+        item.style.animationDuration = (2 + Math.random() * 3) + "s";
+        item.style.color = colors[Math.floor(Math.random() * colors.length)];
+        document.body.appendChild(item);
+        setTimeout(() => item.remove(), 5500);
+      }
+
+      document.getElementById("feedback").textContent =
+        "🎉 كل الأمنيات الجميلة لكِ يا شهد!";
+    }
+
+    function makeHeart() {
+      const heart = document.createElement("span");
+      heart.className = "heart";
+      heart.textContent = ["💗", "💕", "💖"][Math.floor(Math.random() * 3)];
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = (12 + Math.random() * 18) + "px";
+      heart.style.animationDuration = (6 + Math.random() * 6) + "s";
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 12500);
+    }
+
+    setInterval(makeHeart, 1100);
+
+    async function copyGreeting() {
+      const greeting =
+`إلى زميلتنا الغالية شهد عبدالحليم 🌷
+
+باسم أسرة الدفعة 27 طب، كل عام وأنتِ بخير.
+قد تتأخر التهنئة يومًا، لكن المحبة الصادقة لا تتأخر أبدًا.
+
+نسأل الله أن يجعل عامكِ الجديد عامًا لجبر الخاطر،
+وتحقيق الأمنيات، والنجاح والسعادة وراحة البال.
+
+كل عام وأنتِ بخير يا شهد 💗
+بكل المحبة والتقدير،
+أسرة الدفعة 27 طب`;
+
+      const feedback = document.getElementById("feedback");
+
+      try {
+        await navigator.clipboard.writeText(greeting);
+        feedback.textContent = "✅ تم نسخ التهنئة، يمكنكِ مشاركتها الآن.";
+      } catch (error) {
+        const area = document.createElement("textarea");
+        area.value = greeting;
+        area.style.position = "fixed";
+        area.style.opacity = "0";
+        document.body.appendChild(area);
+        area.select();
+
+        try {
+          document.execCommand("copy");
+          feedback.textContent = "✅ تم نسخ التهنئة.";
+        } catch (copyError) {
+          feedback.textContent = "يمكنكِ نسخ التهنئة يدويًا من الرسالة.";
+        }
+
+        area.remove();
+      }
+    }
+  </script>
+</body>
+</html>
